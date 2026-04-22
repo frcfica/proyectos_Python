@@ -15,4 +15,4 @@ while True:
 print("Resultados de la votación:")
 for i in range(len(candidatos)):
     print(f"{candidatos[i]}: {votos[i]} votos")
-    
+    print("El ganador es: " + candidatos[votos.index(max(votos))])
