@@ -1,12 +1,18 @@
-candidatos = ("A" , "B" , "C")
+candidatos = ("Jose Antonio Kast" , "Jeannette Jara" , "Franco Parisi")
 votos = [0, 0, 0]
-while votos[0] + votos[1] + votos[2] < 10:
-    voto = input("Ingrese su voto (A, B o C): ").upper()
-    if voto in candidatos:
-        suma = candidatos.index(voto)
-        votos[suma] += 1
+while True:
+    voto = input("Ingrese su voto (Jose Antonio Kast, Jeannette Jara, Franco Parisi) o 'salir' para terminar: ").lower()
+    if voto == "salir":
+        break
+    elif voto == candidatos[0].lower():
+        votos[0] += 1
+    elif voto == candidatos[1].lower():
+        votos[1] += 1
+    elif voto == candidatos[2].lower():
+        votos[2] += 1
     else:
-        print("Voto inválido. Intente de nuevo.")   
-print ("Fin de la votación:")
+        print("Voto no válido. Intente de nuevo.")
+print("Resultados de la votación:")
 for i in range(len(candidatos)):
-    print(candidatos[i] + ": " + str(votos[i]) + " votos")
+    print(f"{candidatos[i]}: {votos[i]} votos")
+    
