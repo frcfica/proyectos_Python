@@ -1,4 +1,4 @@
-velocidad = float(input("Ingresa la velocidad del coche: "))
+velocidad = float(input("Ingresa la velocidad del coche: ")) 
 if velocidad < 20:
     print("Muy lento")
 elif 20 <= velocidad <= 60:

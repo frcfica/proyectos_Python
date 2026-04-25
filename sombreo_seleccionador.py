@@ -6,3 +6,5 @@ def sombrero_seleccionador():
         "Slytherin": 0
     }
 print("==|Bienvenido al sombrero seleccionador|==")
+print("Responde las siguientes preguntas para descubrir a qué casa de Hogwarts perteneces.")
+# Pregunta 1
